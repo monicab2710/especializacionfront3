@@ -29,11 +29,11 @@ export default function HomeCard({ title, image, id }: HomeCardProps) {
             </CardContent>
             <CardActions>
                     <Button size="small" disabled>
-                        Comprar
+                        Buy
                     </Button>
                 <Link href={`/comics/${id}`}>
                     <Button size="small">
-                        Ver detalle
+                        View Details
                     </Button>
                 </Link>
             </CardActions>

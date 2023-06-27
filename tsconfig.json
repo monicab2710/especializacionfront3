@@ -45,7 +45,7 @@
     "**/*.ts",
     "**/*.tsx",
     "types.d.ts"
-  ],
+, "pages/confirmacion-compra/confirmation.tsx"  ],
   "exclude": [
     "node_modules"
   ]

@@ -32,7 +32,7 @@ const Index: NextPage<indexProps> = ({ initialComics, initialTotal }) => {
     const [total, settotal] = useState(initialTotal);
     const LIMIT = 12
 
-    const handleChange = (event: React.ChangeEvent<unknown>, value: number) => {
+    const handleChange = (_event: React.ChangeEvent<unknown>, value: number) => {
         setPage(value);
     };
 

@@ -1,9 +1,9 @@
 import React from "react";
 import Head from 'next/head';
 import { FaqsType } from "../../components/faqs/faqsData";
-import LayoutGeneral from "dh-marvel/components/layouts/layout-general";
 import BodySingle from "dh-marvel/components/layouts/body/single/body-single";
 import SinpleAccordion from "dh-marvel/components/Accordions/SinpleAccordion";
+import LayoutGeneral from "dh-marvel/components/layouts/layout-general";
 
 
 export const getStaticPops = async () => {
@@ -27,7 +27,7 @@ const Faq: React.FC<Props> = ({ data }) => {
     return (
         <>
             <Head>
-                <title>Preguntas frecuentes | DH MARVEL</title>
+                <title>Preguntas frecuentes| DH MARVEL</title>
                 <meta name="description" content="Preguntas frecuentes sobre DH MARVEL" />
             </Head>
             <LayoutGeneral>

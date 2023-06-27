@@ -1,4 +1,4 @@
-import {generateAuthenticationString} from "dh-marvel/services/marvel/marvel-auth.service";
+import { generateAuthenticationString } from "dh-marvel/services/marvel/marvel-auth.service";
 
 const MARVEL_API_URL = process.env.MARVEL_API_URL;
 
@@ -32,6 +32,9 @@ export const getComic = async (comicId: number) => {
         }
         return comic;
     } else return null;
+
+
+
 }
 
 export const getCharacter = async (characterId: number) => {
@@ -39,4 +42,15 @@ export const getCharacter = async (characterId: number) => {
     const results = data.data.results;
     if (results.length > 0) return results[0];
     else return null;
+}
+
+
+export const getCharacterByComic = async (comicId: number) => {
+    const data = await fetchApi(`comics/${comicId}/characters`);
+    return data.data.results;
+}
+
+export const getCharacters = async () => {
+    const data = await fetchApi(`characters`);
+    return data.data.results;
 }
