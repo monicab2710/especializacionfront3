@@ -12,6 +12,8 @@ const INITIAL_LIMIT = 12
 
 export async function getServerSideProps() {
     const response = await getComics(INITIAL_OFFSET, INITIAL_LIMIT)
+
+    console.log(response.data.results)
     return {
         props: {
             initialComics: response.data.results,
