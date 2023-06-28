@@ -11,7 +11,8 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
   const paths = response.data.results.map(({ id }: { id: any }) => ({
     params: {
-      id: id?.toString()
+      id: id?.toString(),
+      apikey:process.env.NEXT_PUBLIC_MARVEL_API_PUBLIC_KEY 
     }
   }));
 
