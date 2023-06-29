@@ -37,11 +37,11 @@ function CharacterDetails({ character }: { character: any }) {
     <>
       <Head>
         <title>{character?.name} | DH MARVEL</title>
-        <meta name="description" content={`${character?.name}: página detalle de personaje de cómic`} />
+        <meta name="description" content={`${character?.name}: comic character detail page`} />
       </Head>
       <LayoutGeneral>
         <Box sx={{ margin: '1rem', width: '400' }} >
-          <BodySingle title='Detalle personaje'>
+          <BodySingle title='Character Detail'>
             <CardCharacter
               name={character?.name}
               description={character?.description}

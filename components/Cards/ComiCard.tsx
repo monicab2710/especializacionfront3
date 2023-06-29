@@ -54,7 +54,7 @@ export default function CardComic({ title, description, image, price, id, oldPri
                     </Link>
                     :
                     <Button variant="contained" disabled>
-                        Sin stock disponible
+                         sorry, Out of stock.
                     </Button>
                 }
             </CardActions>

@@ -7,27 +7,29 @@ export type FaqsType = {
 export const faqsData: FaqsType[] = [
     {
         "id": 1,
-        "question": "¿Cuántos comics tienen?",
-        "answer": "Actualmente disponemos de toda la colección de Marvel. Algunos ejemplares pueden contar con poca o nula disponibilidad por el momento. Para mas información puede acceder a https://marvel.com"
-    },
-    {
+        "question": "How many comics do you have?",
+        "answer": "We currently have the entire Marvel collection available. Some issues may have limited or no availability at the moment. For more information, you can visit https://marvel.com."
+        },
+        {
         "id": 2,
-        "question": "¿Se puede reservar nuevos lanzamientos?",
-        "answer": "Lamentablemente nuestro sitio todavía no acepta reservas anticipadas. Pero nos encontramos trabajando en esa funcionalidad. Seguí nuestro twitter para estar al tanto de las ultimas novedades."
-    },
-    {
+        "question": "Can I pre-order new releases?",
+        "answer": "Unfortunately, our website does not yet accept pre-orders. However, we are working on adding that functionality. Follow our Twitter to stay updated on the latest news."
+        },
+        {
         "id": 3,
-        "question": "¿Cuanto demoran las entregas?",
-        "answer": "Todas nuestras entregas son enviadas a través de DH-Express, que alcanza a todo el país en 24hs."
-    },
-    {
+        "question": "How long do deliveries take?",
+        "answer": "All our deliveries are sent through DH-Express, which reaches the entire country within 24 hours."
+        },
+        {
         "id": 4,
-        "question": "¿Qué métodos de pago están disponibles?",
-        "answer": "Solo se aceptan tarjetas de crédito Visa y Mastercard. De momento no aceptamos pagos en efectivo u otros medios."
-    },
-    {
+        "question": "What payment methods are available?",
+        "answer": "We only accept Visa and Mastercard credit cards. At the moment, we do not accept cash or other payment methods."
+        },
+        {
         "id": 5,
-        "question": "¿Se aceptan devoluciones?",
-        "answer": "Nuestras compras aceptan devoluciones siempre y cuando el comic se encuentre en su envoltorio original, ya que de otra forma pierden el valor de reventa. Si desea devolverlo y se encuentra en las mismas condiciones en las que fue enviado, comuníquese con el 11-5555-0001 para resolver la devolución."
-    }
+        "question": "Do you accept returns?",
+        "answer": "We accept returns for our purchases as long as the comic is in its original packaging, as otherwise, they lose their resale value. If you wish to return it and it is in the same condition as when it was sent, please contact 11-5555-0001 to arrange the return."
+        }
+           
+        
 ]

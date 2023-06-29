@@ -28,9 +28,11 @@ export default function HomeCard({ title, image, id }: HomeCardProps) {
                 </Typography>
             </CardContent>
             <CardActions>
+                <Link href={`/checkout?comic/${id}`}>
                     <Button size="small" disabled>
-                        Buy
+                        Buy it
                     </Button>
+                </Link>
                 <Link href={`/comics/${id}`}>
                     <Button size="small">
                         View Details

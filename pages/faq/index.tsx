@@ -27,11 +27,11 @@ const Faq: React.FC<Props> = ({ data }) => {
     return (
         <>
             <Head>
-                <title>Preguntas frecuentes| DH MARVEL</title>
-                <meta name="description" content="Preguntas frecuentes sobre DH MARVEL" />
+                <title> Frequently Asked QuestionsMARVEL</title>
+                <meta name="description" content="Frequently Asked Questions DH MARVEL" />
             </Head>
             <LayoutGeneral>
-                <BodySingle title='Preguntas frecuentes'>
+                <BodySingle title='Frequently Asked Questions'>
                     {data.map(faq => {
                         return (
                             <SinpleAccordion

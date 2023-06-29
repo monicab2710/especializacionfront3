@@ -29,7 +29,7 @@ function PurchaseConfirmation() {
               <Box
                 sx={{
                   marginBottom: "5px",
-                  backgroundColor: "#43a14d",
+                  backgroundColor: "purple",
                   color: 'white',
                   paddingLeft: '50px',
                   paddingRight: '50px',

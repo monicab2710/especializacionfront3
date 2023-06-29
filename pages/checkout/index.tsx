@@ -30,7 +30,7 @@ function Checkout() {
   return (
     <>
       <Head>
-        <title>Checkout | DH MARVEL</title>
+        <title> Checkout | DH MARVEL</title>
       </Head>
       <LayoutCheckout>
         <BodySingle title='Checkout'>
