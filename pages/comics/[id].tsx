@@ -2,8 +2,8 @@ import { Box } from '@mui/material';
 import ComiCard from 'dh-marvel/components/Cards/ComiCard';
 import BodySingle from 'dh-marvel/components/layouts/body/single/body-single';
 import LayoutGeneral from 'dh-marvel/components/layouts/layout-general';
-import { getCharacterByComic, getComic, getComics } from 'dh-marvel/services/marvel/marvel.service';
-import { GetStaticPaths, GetStaticProps } from 'next';
+import { getCharacterByComic, getComic, getComics} from 'dh-marvel/services/marvel/marvel.service';
+import {  GetStaticPaths, GetStaticProps } from 'next';
 import Head from 'next/head';
 
 export const getStaticPaths: GetStaticPaths = async () => {
@@ -11,8 +11,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
   const paths = response.data.results.map(({ id }: { id: any }) => ({
     params: {
-      id: id?.toString(),
-      apikey:process.env.NEXT_PUBLIC_MARVEL_API_PUBLIC_KEY 
+      id: id?.toString()
     }
   }));
 

@@ -5,8 +5,6 @@ const MARVEL_API_URL = process.env.NEXT_PUBLIC_MARVEL_API_URL;
 const fetchApi = async (endpoint: string, urlParams?: string) => {
     const authString = generateAuthenticationString();
     const url = `${MARVEL_API_URL}/${endpoint}?${authString}&${urlParams || ''}`
-
-    console.log(url)
     const response = await fetch(url);
     return await response.json();
 }

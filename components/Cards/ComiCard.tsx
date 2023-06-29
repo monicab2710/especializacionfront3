@@ -39,7 +39,7 @@ export default function CardComic({ title, description, image, price, id, oldPri
                 </Typography>
                 <Typography variant="body1" color="text.secondary">
                     {!description
-                        ? "Sin descripción disponible"
+                        ? "no description avaliable"
                         : description
                     }
                 </Typography>

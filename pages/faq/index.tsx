@@ -6,7 +6,7 @@ import SinpleAccordion from "dh-marvel/components/Accordions/SinpleAccordion";
 import LayoutGeneral from "dh-marvel/components/layouts/layout-general";
 
 
-export const getStaticPops = async () => {
+export const getStaticProps = async () => {
     const resp = await fetch("https://my-marvel-store.vercel.app/api/faq");
     const data: FaqsType[] = await resp.json();
 
