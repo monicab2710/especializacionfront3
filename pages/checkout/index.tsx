@@ -32,7 +32,7 @@ function Checkout() {
       <Head>
         <title> Checkout | DH MARVEL</title>
       </Head>
-      <LayoutCheckout>
+      
         <BodySingle title='Checkout'>
           <Box sx={{ padding: { xs: "20px", sm: "20px" } }} display={'flex'} justifyContent={'center'}>
             <Stack
@@ -54,7 +54,7 @@ function Checkout() {
             </Stack>
           </Box>
         </BodySingle>
-      </LayoutCheckout>
+      
     </>
   )
 }

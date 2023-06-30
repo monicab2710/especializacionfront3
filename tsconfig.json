@@ -45,7 +45,7 @@
     "**/*.ts",
     "**/*.tsx",
     "types.d.ts"
-, "pages/confirmacioncompra/index.tsx" 
+, "pages/confirmacion-compra/index.tsx" 
 , "components/Cards/ComicCard.tsx"  ],
   "exclude": [
     "node_modules"

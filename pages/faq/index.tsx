@@ -30,20 +30,20 @@ const Faq: React.FC<Props> = ({ data }) => {
                 <title> Frequently Asked QuestionsMARVEL</title>
                 <meta name="description" content="Frequently Asked Questions DH MARVEL" />
             </Head>
-            <LayoutGeneral>
-                <BodySingle title='Frequently Asked Questions'>
-                    {data.map(faq => {
-                        return (
-                            <SinpleAccordion
-                                key={faq.id}
-                                id={faq.id}
-                                question={faq.question}
-                                answer={faq.answer}
-                            />
-                        )
-                    })}
-                </BodySingle>
-            </LayoutGeneral >
+
+            <BodySingle title='Frequently Asked Questions'>
+                {data.map(faq => {
+                    return (
+                        <SinpleAccordion
+                            key={faq.id}
+                            id={faq.id}
+                            question={faq.question}
+                            answer={faq.answer}
+                        />
+                    )
+                })}
+            </BodySingle>
+
         </>
     )
 }

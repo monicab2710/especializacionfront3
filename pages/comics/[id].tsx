@@ -42,7 +42,7 @@ function ComicDetails({ comic, characters }: { comic: any, characters: any }) {
         <title>{comic?.title} | DH MARVEL</title>
         <meta name="description" content={`${comic?.title}: Comic Detail Page `} />
       </Head>
-      <LayoutGeneral>
+      
         <Box sx={{ marginBottom: '1rem' }}>
           <BodySingle title='Comic Detail '>
             <ComiCard
@@ -57,7 +57,7 @@ function ComicDetails({ comic, characters }: { comic: any, characters: any }) {
             />
           </BodySingle>
         </Box>
-      </LayoutGeneral>
+     
     </>
   )
 }

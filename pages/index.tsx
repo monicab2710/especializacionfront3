@@ -1,4 +1,4 @@
-import type {NextPage} from 'next'
+import type { NextPage } from 'next'
 import Head from 'next/head'
 import BodySingle from "dh-marvel/components/layouts/body/single/body-single";
 import { getComics } from 'dh-marvel/services/marvel/marvel.service';
@@ -53,19 +53,18 @@ const Index: NextPage<indexProps> = ({ initialComics, initialTotal }) => {
 
     return (
         <>
-           
+
             <Head>
                 <title> MARVEL 2023 </title>
-                <meta name="description" content="web site marvel"/>
-                <link rel="icon" href="/favicon.ico"/>
+                <meta name="description" content="web site marvel" />
+                <link rel="icon" href="/favicon.ico" />
             </Head>
-            <LayoutGeneral>
             <BodySingle title={"🦸‍♂️⚡️!!WELCOME TO THE MARVEL STORE!! 🎉👸🏻"}>
-            <PaginationOutlined count={Math.round(total / 12)} page={page} handleChange={handleChange} />
-                    <ResponsiveGrid data={comics} />
-                    <PaginationOutlined count={Math.round(total / 12)} page={page} handleChange={handleChange} />
+                <PaginationOutlined count={Math.round(total / 12)} page={page} handleChange={handleChange} />
+                <ResponsiveGrid data={comics} />
+                <PaginationOutlined count={Math.round(total / 12)} page={page} handleChange={handleChange} />
             </BodySingle>
-            </LayoutGeneral>
+
         </>
     )
 }
