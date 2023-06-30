@@ -53,18 +53,18 @@ const Index: NextPage<indexProps> = ({ initialComics, initialTotal }) => {
 
     return (
         <>
-
-            <Head>
-                <title> MARVEL 2023 </title>
-                <meta name="description" content="web site marvel" />
-                <link rel="icon" href="/favicon.ico" />
-            </Head>
-            <BodySingle title={"🦸‍♂️⚡️!!WELCOME TO THE MARVEL STORE!! 🎉👸🏻"}>
-                <PaginationOutlined count={Math.round(total / 12)} page={page} handleChange={handleChange} />
-                <ResponsiveGrid data={comics} />
-                <PaginationOutlined count={Math.round(total / 12)} page={page} handleChange={handleChange} />
-            </BodySingle>
-
+            <LayoutGeneral>
+                <Head>
+                    <title> MARVEL 2023 </title>
+                    <meta name="description" content="web site marvel" />
+                    <link rel="icon" href="/favicon.ico" />
+                </Head>
+                <BodySingle title={"🦸‍♂️⚡️!!WELCOME TO THE MARVEL STORE!! 🎉👸🏻"}>
+                    <PaginationOutlined count={Math.round(total / 12)} page={page} handleChange={handleChange} />
+                    <ResponsiveGrid data={comics} />
+                    <PaginationOutlined count={Math.round(total / 12)} page={page} handleChange={handleChange} />
+                </BodySingle>
+            </LayoutGeneral>
         </>
     )
 }

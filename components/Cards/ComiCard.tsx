@@ -49,7 +49,7 @@ export default function CardComic({ title, description, image, price, id, oldPri
                     ?
                     <Link href={{ pathname: "/checkout/", query: `comic=${id}` }} >
                         <Button variant="contained" endIcon={<ShoppingCartOutlinedIcon />}>
-                            Comprar
+                            buy
                         </Button>
                     </Link>
                     :

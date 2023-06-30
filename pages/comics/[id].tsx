@@ -2,8 +2,8 @@ import { Box } from '@mui/material';
 import ComiCard from 'dh-marvel/components/Cards/ComiCard';
 import BodySingle from 'dh-marvel/components/layouts/body/single/body-single';
 import LayoutGeneral from 'dh-marvel/components/layouts/layout-general';
-import { getCharacterByComic, getComic, getComics} from 'dh-marvel/services/marvel/marvel.service';
-import {  GetStaticPaths, GetStaticProps } from 'next';
+import { getCharacterByComic, getComic, getComics } from 'dh-marvel/services/marvel/marvel.service';
+import { GetStaticPaths, GetStaticProps } from 'next';
 import Head from 'next/head';
 
 export const getStaticPaths: GetStaticPaths = async () => {
@@ -17,7 +17,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
   return {
     paths,
-    fallback: 'blocking' 
+    fallback: 'blocking'
   }
 };
 
@@ -42,7 +42,7 @@ function ComicDetails({ comic, characters }: { comic: any, characters: any }) {
         <title>{comic?.title} | DH MARVEL</title>
         <meta name="description" content={`${comic?.title}: Comic Detail Page `} />
       </Head>
-      
+      <LayoutGeneral>
         <Box sx={{ marginBottom: '1rem' }}>
           <BodySingle title='Comic Detail '>
             <ComiCard
@@ -57,7 +57,7 @@ function ComicDetails({ comic, characters }: { comic: any, characters: any }) {
             />
           </BodySingle>
         </Box>
-     
+      </LayoutGeneral>
     </>
   )
 }
